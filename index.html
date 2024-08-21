@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,80 @@
     <!-- DaisyUi + Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/06a83c136a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <h1>Hello, I am here</h1>
+    <header class="bg-gradient-to-b from-slate-100 to-slate-50">
+        <div class="container navbar mx-auto lg:w-4/5">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <ul class="menu px-1 text-sm">
+                            <li class="hoverduration-300 easy-in-out"><a>Home</a></li>
+                            <li class="duration-300 easy-in-out"><a>Services</a></li>
+                            <li class="duration-300 easy-in-out"><a>Portfolio</a></li>
+                            <li class="duration-300 easy-in-out"><a>Blogs</a></li>
+                            <li class="duration-300 easy-in-out"><a>Contact Us</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-arrow-right font-sm bg-lime-400 rounded-full -rotate-45 p-2"></i>
+                <a class="btn btn-ghost text-4xl font-bold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden text-base lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="hover:text-slate-800 duration-300 easy-in-out"><a>Home</a></li>
+                    <li class="hover:bg-slate-800 duration-300 easy-in-out"><a>Services</a></li>
+                    <li class="hover:bg-slate-800 duration-300 easy-in-out"><a>Portfolio</a></li>
+                    <li class="hover:bg-slate-800 duration-300 easy-in-out"><a>Blogs</a></li>
+                    <li class="hover:bg-slate-800 duration-300 easy-in-out"><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end flex space-x-5">
+                <i class="fa-solid fa-magnifying-glass text-slate-600 bg-white rounded-box p-2"></i>
+                <i class="fa-solid fa-cart-shopping text-slate-600 bg-white rounded-full p-2"></i>
+                <a class="btn bg-lime-500 text-sm font-semibold">Book Consult
+                    <i class="fa-solid fa-arrow-right font-sm text-white bg-slate-700 rounded-box -rotate-45 p-2"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Banner -->
+        <nav class="container mx-auto lg:w-4/5">
+            <img class="" src="/assets/banner.png" alt="">
+            <h1 class="text-7xl font-bold  p-4">A barn house of this design has a
+                striking appearance</h1>
+            <p class="lg:w-4/5 text-slate-700 text-center m-4 l">The barn house captivates with its blend of rustic
+                charm and modern
+                sophistication, featuring weathered
+                wood, sleek metal
+                accents, and large windows that flood the space with natural light.</p>
+            </div>
+            <div class="navbar-end flex space-x-5">
+                <a class="btn bg-lime-200 text-sm font-semibold rounded-full">View Details
+                    <i class="fa-solid fa-arrow-right font-sm bg-lime-400 rounded-full -rotate-45 p-2"></i></i>
+                </a>
+        </nav>
     </header>
     <main></main>
     <footer></footer>
