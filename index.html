@@ -8,33 +8,16 @@
     <!-- DaisyUi + Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/06a83c136a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="bg-gradient-to-b from-slate-200 to-slate-50 md:mx-auto">
-        <div class="container navbar mx-auto w-4/5">
+        <div class="container navbar mx-auto w-4/5 space-x-16">
             <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <ul class="menu px-1 text-sm">
-                            <li class="hoverduration-300 easy-in-out"><a>Home</a></li>
-                            <li class="duration-300 easy-in-out"><a>Services</a></li>
-                            <li class="duration-300 easy-in-out"><a>Portfolio</a></li>
-                            <li class="duration-300 easy-in-out"><a>Blogs</a></li>
-                            <li class="duration-300 easy-in-out"><a>Contact Us</a></li>
-                        </ul>
-                    </ul>
-                </div>
                 <i class="fa-solid fa-arrow-right font-sm bg-lime-300 rounded-full -rotate-45 p-2"></i>
                 <a class="btn btn-ghost text-4xl font-bold">Rinterio</a>
             </div>
@@ -47,12 +30,30 @@
                     <li class="hover:bg-slate-300 duration-300 easy-in-out"><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div class="navbar-end flex space-x-5">
+            <div class="navbar-end flex space-x-4">
                 <i class="fa-solid fa-magnifying-glass text-slate-600 bg-white rounded-box p-2"></i>
                 <i class="fa-solid fa-cart-shopping text-slate-600 bg-white rounded-full p-2"></i>
                 <a class="btn bg-lime-400 text-sm font-semibold">Book Consult
                     <i class="fa-solid fa-arrow-right font-sm text-white bg-slate-700 rounded-box -rotate-45 p-2"></i>
                 </a>
+                <div class="dropdown mx-auto">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-32 shadow">
+                        <ul class="menu text-sm">
+                            <li class="duration-300 easy-in-out"><a>Home</a></li>
+                            <li class="duration-300 easy-in-out"><a>Services</a></li>
+                            <li class="duration-300 easy-in-out"><a>Portfolio</a></li>
+                            <li class="duration-300 easy-in-out"><a>Blogs</a></li>
+                            <li class="duration-300 easy-in-out"><a>Contact Us</a></li>
+                        </ul>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- Banner -->
@@ -71,8 +72,8 @@
         </nav>
     </header>
     <main>
-        <!-- Section 1 -->
         <div class="bg-slate-100 m-10 p-10 mx-auto">
+            <!-- Section 1 -->
             <div class="grid lg:grid-cols-2 ">
                 <div class="px-10">
                     <img class="px-1" src="./images/Vector.png" alt="">
@@ -125,8 +126,8 @@
                 <div class="flex gap-x-6 items-center justify-center mx-auto">
                     <!-- card 1 -->
                     <div class="card bg-fuchsia-300 w-80 shadow-xl mt-12">
-                        <figure class="mt-6 w-12 mx-6">
-                            <img src="./images/concept.png" alt="" />
+                        <figure class="mt-6 w-12 mx-6 -mb-4">
+                            <img src="images/concept.png" alt="" />
                         </figure>
                         <div class="card-body">
                             <h2 class="card-title">Concept</h2>
@@ -135,8 +136,8 @@
                     </div>
                     <!-- card 2 -->
                     <div class="card bg-amber-300 w-80 shadow-xl mt-12">
-                        <figure class="mt-6 w-12 mx-6">
-                            <img src="./images/concept.png" alt="" />
+                        <figure class="mt-6 w-12 mx-7 -mb-4">
+                            <img src="images/flow-chart.png" alt="" />
                         </figure>
                         <div class="card-body">
                             <h2 class="card-title">Design Process</h2>
@@ -145,8 +146,8 @@
                     </div>
                     <!-- card 3 -->
                     <div class="card bg-teal-200 w-80 shadow-xl mt-12">
-                        <figure class="mt-6 w-12 mx-6">
-                            <img src="./images/concept.png" alt="" />
+                        <figure class="mt-6 w-12 mx-7 -mb-4">
+                            <img src="images/vision.png" alt="" />
                         </figure>
                         <div class="card-body">
                             <h2 class="card-title">Supervision</h2>
@@ -155,8 +156,8 @@
                     </div>
                     <!-- card 4 -->
                     <div class="card bg-cyan-500 w-80 shadow-xl mt-12">
-                        <figure class="mt-6 w-12 mx-6">
-                            <img src="./images/concept.png" alt="" />
+                        <figure class="mt-6 w-12 mx-7 -mb-4">
+                            <img src="images/budget-planning.png" alt="" />
                         </figure>
                         <div class="card-body">
                             <h2 class="card-title">Budget Planning</h2>
@@ -167,26 +168,80 @@
             </div>
         </div>
         <!-- Section 3 -->
+        <div class="mt-20 mx-auto m-20 p-10">
+            <div class="rounded-full p-2 text-center">
+                <a class="btn bg-white text-sm font-semibold rounded-full px-10">
+                <i class="fa-solid fa-arrow-right font-sm rounded-full"></i>Explore our Latest works</a>
+            </div>
+            <div class="text-center">
+                <div class="px-6">
+                    <h1 class="text-5xl text-center font-bold mb-6">Our Latest Portfolio</h1>
+                    <p class="text-slate-700 px-64">The barn house captivates with its blend of rustic charm and modern sophistication,featuring weathered wood, sleek metal accents.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-4 max-auto ">
+                <div class="grid grid-cols-2 w-4/5 card card-side bg-base-100 shadow-xl border-solid border-black px-4 mt-6 w-80">
+                    <figure>
+                        <img src="images/img1.png" alt= />
+                    </figure>
+                    <div class="card-body w-80">
+                        <h2 class="card-title font-bold">Commercial</h2>
+                        <p class="w-52">The barn house captivates with its blend of rustic charm and modern.</p>
+                        <div class="">
+                            <a class=" text-sm font-semibold">View Details
+                            <i class="fa-solid fa-arrow-right font-sm bg-lime-400 rounded-full -rotate-45 p-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
         <!-- Section 4 -->
-         <!-- <div class="flex sm:flex-row flex-col"></div> -->
+        <div class="image mt-20 mx-auto mb-2 p-10">
+            <div class="p-2 text-center">
+                <a class="btn bg-lime-100 text-sm font-semibold rounded-full px-10">
+                    <i class="fa-solid fa-arrow-right font-sm rounded-full"></i>Let s Connect</a>
+            </div>
+            <div class="text-center">
+                <div class="px-6">
+                    <h1 class="text-5xl text-center font-bold mb-6">Let<span>'</span>s Discuss Next Project</h1>
+                    <p class="text-slate-700 px-64">The barn house captivates with its blend of rustic charm and modern
+                        sophistication,featuring weathered wood, sleek metal accents.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 mt-10 mx-auto w-4/5 gap-x-3 py-4">
+                <input type="text" placeholder="First Name*" class="bg-white input input-ghost mb-4 rounded-full" />
+                <input type="text" placeholder="Last Name*" class="bg-white input input-ghost mb-4 rounded-full" />
+                <input type="text" placeholder="Phone Number*" class="bg-white input input-ghost mb-4 rounded-full" />
+                <input type="text" placeholder="Email Number*" class="bg-white input input-ghost mb-4 rounded-full" />
+            </div>
+            <div class="grid grid-cols-1 mx-auto w-4/5 gap-x-3">
+                <input type="text" placeholder="Write your message here"
+                    class="bg-white input input-ghost mat-12 mb-5 rounded-box h-60" />
+                <a class="btn bg-lime-400 text-lg font-bold rounded-full">Send Mail
+                    <i class="fa-solid fa-arrow-right font-sm text-white bg-slate-700 rounded-box -rotate-45 p-2"></i>
+                </a>
+            </div>
+        </div>
     </main>
     <!-- footer -->
-    <footer class="bg-black text-white text-center items-center p-24">
+    <footer class="bg-black text-white text-center items-center pt-24 p-10">
         <!--  md:text-center -->
-        <i class="fa-solid fa-arrow-right font-sm bg-lime-400 rounded-full -rotate-45 p-3"></i>
+        <i class="fa-solid fa-arrow-right font-sm bg-lime-300 rounded-full -rotate-45 p-2"></i>
         <a class="btn btn-ghost text-4xl font-bold">Rinterio</a>
-        <p class="m-8 text-slate-500 text-center px-60">The barn house captivates with its blend of rustic charm and
+        <p class="m-8 text-slate-300 text-center px-60">The barn house captivates with its blend of rustic charm and
             modern sophistication, featuring weathered wood, sleek metal accents.</p>
         <!--  md:mx-32 -->
         <div class="text-base">
             <!-- lg:flex md:mx-52 -->
-            <ul class="menu menu-horizontal px-1 items-center">
+            <ul class="menu menu-horizontal px-1 items-center space-x-10">
                 <!-- lg:menu-horizontal md:items-center -->
-                <li class="hover:text-slate-500 duration-300 easy-in-out"><a>Home</a></li>
-                <li class="hover:text-slate-500 duration-300 easy-in-out"><a>Services</a></li>
-                <li class="hover:text-slate-500 duration-300 easy-in-out"><a>Portfolio</a></li>
-                <li class="hover:text-slate-500 duration-300 easy-in-out"><a>Blogs</a></li>
-                <li class="hover:text-slate-500 duration-300 easy-in-out"><a>Contact Us</a></li>
+                <li class="hover:text-lime-300 duration-300 easy-in-out"><a>Home</a></li>
+                <li class="hover:text-lime-300 duration-300 easy-in-out"><a>Services</a></li>
+                <li class="hover:text-lime-300 duration-300 easy-in-out"><a>Portfolio</a></li>
+                <li class="hover:text-lime-300 duration-300 easy-in-out"><a>Blogs</a></li>
+                <li class="hover:text-lime-300 duration-300 easy-in-out"><a>Contact Us</a></li>
             </ul>
         </div>
         <div class="p-6">
@@ -197,5 +252,6 @@
         </div>
     </footer>
 </body>
+<!-- <div class="flex sm:flex-row flex-col"></div> -->
 
 </html>
