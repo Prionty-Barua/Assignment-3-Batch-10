@@ -1,5 +1,13 @@
+/* * {
+    border: 1px solid red;
+}
+
+body {
+    border: 4px dashed green;
+}  */
 .image{
     background-image: url(images/bg.jpg);
+    /* opacity: 1.10; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
